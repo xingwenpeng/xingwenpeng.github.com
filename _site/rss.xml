@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href='/assets/rss.xsl' type='text/xsl' ?>
+
+<rss 
+        xmlns:atom="http://www.w3.org/2005/Atom" 
+        xmlns:content="http://purl.org/rss/1.0/modules/content/" 
+        xmlns:wfw="http://wellformedweb.org/CommentAPI/" 
+        xmlns:dc="http://purl.org/dc/elements/1.1/" 
+        version="2.0">
+
+<channel>
+        <atom:link href="http://xinwenpeng.github.com" type="application/rss+xml" rel="self"></atom:link>
+        <title>十年之前十年之后</title>
+        <description>十年之前 十年之后</description>
+        <link>http://thinkinside.tk</link>
+        <link>http://thinkinside.tk</link>
+        <language>cn</language>
+        <lastBuildDate>2014-03-07T00:44:13+08:00</lastBuildDate>
+        <pubDate></pubDate>
+        <ttl>1800</ttl>
+
+
+        <item>
+                <title>akaedu</title>
+                <link>http://thinkinside.tk/2014/03/06/akaedu.html</link>
+                <category></category>
+                <description> </description>
+                <content:encoded> </content:encoded>
+                <wfw:commentRSS>/</wfw:commentRSS>
+                <guid>http://thinkinside.tk/2014/03/06/akaedu</guid>
+                <pubDate></pubDate>
+        </item>
+
+
+</channel>
+</rss>

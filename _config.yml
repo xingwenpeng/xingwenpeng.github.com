@@ -3,9 +3,9 @@ safe:           true
 lsi:            false
 pygments:       true
 permalink:      /:year/:month/:day/:title.html
-author:			Holbrook(wanghaikuo@gmail.com)
+author:			XingWenpeng(wenpeng.xing@gmail.com)
 title:          十年之前十年之后
-url:            http://thinkinside.tk
+url:            http://xingwenpeng.github.com
 description:    "xingwenpeng's blog"
 feed:           /atom.xml
 
@@ -18,5 +18,5 @@ menuitems:
       url:      /pages/tags.html
     - name:     关于
       url:      /pages/about.html
-    - name:     订阅
-      url:      /feed.xml
+#    - name:     订阅
+#	 url:      /feed.xml
