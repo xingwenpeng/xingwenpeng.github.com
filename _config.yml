@@ -1,0 +1,22 @@
+markdown:       rdiscount
+safe:           true
+lsi:            false
+pygments:       true
+permalink:      /:year/:month/:day/:title.html
+author:			Holbrook(wanghaikuo@gmail.com)
+title:          十年之前十年之后
+url:            http://thinkinside.tk
+description:    "xingwenpeng's blog"
+feed:           /atom.xml
+
+menuitems:
+    - name:     首页
+      url:      /index.html
+    - name:     归档
+      url:      /pages/archive.html
+    - name:     标签
+      url:      /pages/tags.html
+    - name:     关于
+      url:      /pages/about.html
+    - name:     订阅
+      url:      /feed.xml
