@@ -3,7 +3,7 @@
 
 <!--  Homepage -->
   <url>
-    <loc>http://thinkinside.tk</loc>
+    <loc>http://xingwenpeng.github.com</loc>
     <lastmod>2014-03-07</lastmod>
     <changefreq>daily</changefreq>
 	<priority>1.0</priority>
@@ -11,112 +11,112 @@
 
 
 	<url>
-		<loc>http://thinkinside.tk/about.html</loc>
+		<loc>http://xingwenpeng.github.com/about.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/rss.xml</loc>
+		<loc>http://xingwenpeng.github.com/rss.xml</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/about/index.html</loc>
+		<loc>http://xingwenpeng.github.com/about/index.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/admin/blog_app.html</loc>
+		<loc>http://xingwenpeng.github.com/admin/blog_app.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/admin/discusses_admin.html</loc>
+		<loc>http://xingwenpeng.github.com/admin/discusses_admin.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/public/tagcloud.xml</loc>
+		<loc>http://xingwenpeng.github.com/public/tagcloud.xml</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/index.html</loc>
+		<loc>http://xingwenpeng.github.com/index.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/pages/tags.html</loc>
+		<loc>http://xingwenpeng.github.com/pages/tags.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/pages/archive.html</loc>
+		<loc>http://xingwenpeng.github.com/pages/archive.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/pages/about.html</loc>
+		<loc>http://xingwenpeng.github.com/pages/about.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/pages/categories.html</loc>
+		<loc>http://xingwenpeng.github.com/pages/categories.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/sitemap.xml</loc>
+		<loc>http://xingwenpeng.github.com/sitemap.xml</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/latex.html</loc>
+		<loc>http://xingwenpeng.github.com/latex.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/feed.xml</loc>
+		<loc>http://xingwenpeng.github.com/feed.xml</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/sitemap.txt</loc>
+		<loc>http://xingwenpeng.github.com/sitemap.txt</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
 	</url>
 
 	<url>
-		<loc>http://thinkinside.tk/404.html</loc>
+		<loc>http://xingwenpeng.github.com/404.html</loc>
 		<lastmod>2014-03-07</lastmod>
 		<changefreq>daily</changefreq>
 		<priority>0.9</priority>
@@ -124,7 +124,14 @@
 ies
 
 	<url>
-		<loc>http://thinkinside.tk/2014/03/06/akaedu.html</loc>
+		<loc>http://xingwenpeng.github.com/2014/03/07/erlang1.html</loc>
+		<lastmod></lastmod>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
+	</url>
+
+	<url>
+		<loc>http://xingwenpeng.github.com/2014/03/06/akaedu.html</loc>
 		<lastmod></lastmod>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>

@@ -10,7 +10,7 @@
 		<html>
 			<head>
 				<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-				<title>心内求法</title>
+				<title>十年之前</title>
 				<link rel="stylesheet" href="/css/ft5.css" type="text/css"/>
 				<link rel="alternate" type="application/rss+xml" title="RSS" href="{$feedUrl}"/>
 				<xsl:element name="script">

@@ -12,22 +12,33 @@
         <atom:link href="http://xinwenpeng.github.com" type="application/rss+xml" rel="self"></atom:link>
         <title>十年之前十年之后</title>
         <description>十年之前 十年之后</description>
-        <link>http://thinkinside.tk</link>
-        <link>http://thinkinside.tk</link>
+        <link>http://xingwenpeng.github.com</link>
+        <link>http://xingwenpeng.github.com</link>
         <language>cn</language>
-        <lastBuildDate>2014-03-07T00:44:13+08:00</lastBuildDate>
+        <lastBuildDate>2014-03-07T12:55:20+08:00</lastBuildDate>
         <pubDate></pubDate>
         <ttl>1800</ttl>
 
 
         <item>
-                <title>akaedu</title>
-                <link>http://thinkinside.tk/2014/03/06/akaedu.html</link>
+                <title>开发和部署JBoss FUSE中的路由(Route)</title>
+                <link>http://xingwenpeng.github.com/2014/03/07/erlang1.html</link>
                 <category></category>
                 <description> </description>
                 <content:encoded> </content:encoded>
                 <wfw:commentRSS>/</wfw:commentRSS>
-                <guid>http://thinkinside.tk/2014/03/06/akaedu</guid>
+                <guid>http://xingwenpeng.github.com/2014/03/07/erlang1</guid>
+                <pubDate></pubDate>
+        </item>
+
+        <item>
+                <title>akaedu</title>
+                <link>http://xingwenpeng.github.com/2014/03/06/akaedu.html</link>
+                <category></category>
+                <description> </description>
+                <content:encoded> </content:encoded>
+                <wfw:commentRSS>/</wfw:commentRSS>
+                <guid>http://xingwenpeng.github.com/2014/03/06/akaedu</guid>
                 <pubDate></pubDate>
         </item>
 
