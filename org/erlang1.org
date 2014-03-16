@@ -1,71 +1,81 @@
 * 初识Erlang
   怀揣着希望，对高速增长云服务的看好，我开始寻找支持大并发web服务器的解决方案，之前一直从事linux研究，
-但研究方向是linux驱动和arm bootloader，有些偏底层，由于一直在linux下使用c/c++开发，
-对epoll等模型比较熟悉，于是开始研究eginx，后来得知facebook收购what's app后，看到了云服务器的成功，
-察看这个支持4.5亿人的服务器框架，了解到erlang，据说单台服务器可支持100万人，于是转移精力，开始erlang之旅。
+  但研究方向是linux驱动和arm bootloader，有些偏底层，由于一直在linux下使用c/c++开发，
+  对epoll等模型比较熟悉，于是开始研究eginx，后来得知facebook收购what's app后，看到了云服务器的成功，
+  察看这个支持4.5亿人的服务器框架，了解到erlang，据说单台服务器可支持100万人，于是转移精力，开始erlang之旅。
 * 安装运行环境
 ** ubuntu 安装erlang
    初学者建议直接安装ubuntu源里的erlang，虽然版本低点，但上手容易，等相对熟悉后可以选择源码安装
-#+begin_example
-sudo apt-get install erlang 
-#+end_example
+   #+begin_example
+   sudo apt-get install erlang 
+   #+end_example
 ** erlang shell
    开启一个终端，输入erl，进入erlang自己提供的shell
-#+begin_example
-xwp@xwp-x61s:~$ erl
-Erlang R14B04 (erts-5.8.5) [source] [smp:2:2] [rq:2] [async-threads:0] [kernel-poll:false]
+   #+begin_example
+   xwp@xwp-x61s:~$ erl
+   Erlang R14B04 (erts-5.8.5) [source] [smp:2:2] [rq:2] [async-threads:0] [kernel-poll:false]
 
-Eshell V5.8.5  (abort with ^G)
-1> 
-#+end_example
+   Eshell V5.8.5  (abort with ^G)
+   1> 
+   #+end_example
    退出erlang shell，键盘上ctrl+c，两键一起按，然后a；
-#+begin_example
-BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
+   #+begin_example
+   BREAK: (a)bort (c)ontinue (p)roc info (i)nfo (l)oaded
        (v)ersion (k)ill (D)b-tables (d)istribution
-#+end_example
- 或者直接在erlang shell 中输入halt(). ,注意后面有个’.‘，表示此句结束
-#+begin_example
-1> halt().
-#+end_example
-      
+   #+end_example
+   或者直接在erlang shell 中输入halt(). ,注意后面有个’.‘，表示此句结束
+   #+begin_example
+   1> halt().
+   #+end_example
+   
 * 第一个程序
   erlang程序不同于c语言，属于解释性语言（在我看来），可以边解释边执行，不需要执行前先编译，两种运行方式：
   + erlang shell 中输入代码,敲回车直接运行
-#+begin_example
-Eshell V5.8.5  (abort with ^G)
-1> 1 + 3 .
-4
-#+end_example
+  #+begin_example
+  Eshell V5.8.5  (abort with ^G)
+  1> 1 + 3 .
+  4
+  #+end_example
   + 编写test.erl，然后在erlang shell中 c(test).，如果提示{ok, test}，表示代码编写合法，运行如下
-#+begin_example
-xwp@xwp-x61s:~/tmp/erlang$ ls
-test.erl
-xwp@xwp-x61s:~/tmp/erlang$ cat test.erl 
--module(test).
--export ([pnum/0]).
+  #+begin_example
+  xwp@xwp-x61s:~/tmp/erlang$ ls
+  test.erl
+  xwp@xwp-x61s:~/tmp/erlang$ cat test.erl 
+  -module(test).
+  -export ([pnum/0]).
 
-pnum() ->
+  pnum() ->
 	1 + 3 .
-xwp@xwp-x61s:~/tmp/erlang$ erl
-Erlang R14B04 (erts-5.8.5) [source] [smp:2:2] [rq:2] [async-threads:0] [kernel-poll:false]
+  xwp@xwp-x61s:~/tmp/erlang$ erl
+  Erlang R14B04 (erts-5.8.5) [source] [smp:2:2] [rq:2] [async-threads:0] [kernel-poll:false]
 
-Eshell V5.8.5  (abort with ^G)
-1> c(test).
-{ok,test}
-2> test:pnum().
-4
-3> 
-#+end_example
- 注意：编译完test.erl，当前目录下生成test.beam
-#+begin_example
-xwp@xwp-x61s:~/tmp/erlang$ ls
-test.beam  test.erl
-xwp@xwp-x61s:~/tmp/erlang$ file test.beam 
-test.beam: Erlang BEAM file
-xwp@xwp-x61s:~/tmp/erlang$ 
-#+end_example
+  Eshell V5.8.5  (abort with ^G)
+  1> c(test).
+  {ok,test}
+  2> test:pnum().
+  4
+  3> 
+  #+end_example
+  注意：编译完test.erl，当前目录下生成test.beam
+  #+begin_example
+  xwp@xwp-x61s:~/tmp/erlang$ ls
+  test.beam  test.erl
+  xwp@xwp-x61s:~/tmp/erlang$ file test.beam 
+  test.beam: Erlang BEAM file
+  xwp@xwp-x61s:~/tmp/erlang$ 
+  #+end_example
 * erlang BEAM文件
 * 基本语法
+** -module
+   每个erlang的文件都包含一个模块，在文件中的第一行，存放模块的文件必须和模块同名，以.erl为扩展名
+** -export
+   导出模块里的函数，当调用函数时
+   #+begin_example 
+     模块：函数名（参数）.
+   #+end_example
+** 变量
+   函数代码中的参数为变量，首字母必须为大写。
+** 元子
 * 运行程序
 ** erlang shell 中运行
 ** 编译运行
